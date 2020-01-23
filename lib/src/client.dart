@@ -11,6 +11,8 @@ import 'base_request.dart';
 // ignore: uri_does_not_exist
 import 'client_stub.dart'
     // ignore: uri_does_not_exist
+    if (dart.library.js) 'node_client.dart'
+    // ignore: uri_does_not_exist
     if (dart.library.html) 'browser_client.dart'
     // ignore: uri_does_not_exist
     if (dart.library.io) 'io_client.dart';
